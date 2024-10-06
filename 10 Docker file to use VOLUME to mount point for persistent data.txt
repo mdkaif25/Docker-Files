@@ -1,0 +1,9 @@
+
+
+#Docker file to use VOLUME to mount point for persistent data 
+
+FROM ubuntu:latest
+WORKDIR /usr/src/app
+COPY . .
+VOLUME ["/data"]
+CMD ["echo", "Application running with persistent data in /data"]

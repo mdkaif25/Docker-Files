@@ -1,0 +1,12 @@
+
+
+#Docker file to create a ubuntu container
+
+FROM ubuntu:latest
+LABEL maintainer = "kaifmd25@gmail.com"
+RUN apt-get update
+RUN apt install curl -y
+RUN apt install vim -y
+RUN apt install git -y
+WORKDIR /app
+

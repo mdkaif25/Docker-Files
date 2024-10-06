@@ -1,0 +1,8 @@
+
+
+#Docker file to run nginx server
+
+FROM nginx:latest
+LABEL maintainer="kaifmd25@gmail.com"
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80

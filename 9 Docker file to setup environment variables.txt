@@ -1,0 +1,10 @@
+
+
+#Docker file to setup environment variables
+FROM ubuntu:latest
+
+ENV APP_ENV=production
+ENV APP_PORT=8080
+ENV APP_NAME = myapp
+
+EXPOSE $APP_PORT

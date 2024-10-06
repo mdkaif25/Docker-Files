@@ -1,0 +1,9 @@
+
+
+#DOcker file to install java and run java application
+
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY Helloworld.java .
+RUN javac Helloworld.java       #Compile the program
+CMD ["java","Helloworld"]

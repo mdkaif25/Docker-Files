@@ -1,0 +1,13 @@
+
+
+#Docker file to install MySql and start the database
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD = root_password                 #SET ENVIRONMENT VARIABLES
+ENV MYSQL_DATABASE = first_database
+ENV MYSQL_USER = mdkaif
+ENV MYSQL_PASSWORD = mdkaif_password
+
+EXPOSE 3306
+
+CMD ["mysqld"]                                      #TO START DATABASE

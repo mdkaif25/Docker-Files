@@ -1,0 +1,13 @@
+
+
+#Docker file to install and cofigure postgreSQL
+
+FROM postgres:latest
+
+ENV POSTGRES_DB = mykaif_database
+ENV POSTGRES_USER = mdkaif
+ENV POSTGRES_PASSWORD = mdkaif_password
+
+EXPOSE 5432
+
+CMD["postgres"]
